@@ -1,0 +1,138 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/base\/_base\.scss}line{font-family:\000031}}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/base\/_base\.scss}line{font-family:\000038}}
+html {
+  font-size: 62.5%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/base\/_base\.scss}line{font-family:\0000311}}
+body {
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/base\/_typography\.scss}line{font-family:\000031}}
+body {
+  font-family: "Lato",sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #777;
+  padding: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/base\/_typography\.scss}line{font-family:\0000310}}
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/base\/_typography\.scss}line{font-family:\0000314}}
+  .heading-primary--main {
+    display: block;
+    font-size: 7.2rem;
+    letter-spacing: 4.2rem;
+    font-weight: 400;
+    animation: moveInLeft 1s ease-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/base\/_typography\.scss}line{font-family:\0000321}}
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.4rem;
+    letter-spacing: 2.1rem;
+    font-weight: 700;
+    animation: moveInRight 1s ease-out; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\000032}}
+.btn:link, .btn:visited {
+  position: relative;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border-radius: 100px;
+  transition: all .2s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\0000313}}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.2); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\0000317}}
+  .btn:hover::after {
+    transform: scalex(1.4) scaleY(1.6);
+    opacity: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\0000324}}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.2); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\0000329}}
+.btn--white {
+  background: #fff;
+  color: #777; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\0000333}}
+  .btn--white::after {
+    background: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\0000338}}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 100px;
+  z-index: -1;
+  transition: all .4s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/components\/_button\.scss}line{font-family:\0000352}}
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/layout\/_header\.scss}line{font-family:\000031}}
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../images/hero-small.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/layout\/_header\.scss}line{font-family:\0000311}}
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/layout\/_header\.scss}line{font-family:\0000316}}
+  .header__logo {
+    height: 42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/WORK\/Front-end-development\/Project\/PSD\/Natours\/sass\/layout\/_header\.scss}line{font-family:\0000319}}
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
