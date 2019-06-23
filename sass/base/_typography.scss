@@ -3,7 +3,7 @@ body{
     line-height: 1.7;
     font-weight: 400;
     color: $color-gray;
-    padding: 30px;
+    
 
 }
 
@@ -17,6 +17,11 @@ body{
         letter-spacing: 4.2rem;
         font-weight: 400;
         animation: moveInLeft 1s ease-out;
+
+        @include respond(tab-land){
+            font-size: 6rem;
+            letter-spacing: 3.5rem;
+        }
     }
     &--sub{
         display: block;
@@ -24,6 +29,11 @@ body{
         letter-spacing: 2.1rem;
         font-weight: 700;
         animation: moveInRight 1s ease-out;
+
+        @include respond(tab-land){
+            letter-spacing: 1.75rem;
+            font-size: 2rem;
+        }
     }
 }
 .heading-seconday{
@@ -36,6 +46,13 @@ body{
     -webkit-background-clip: text;
     color: transparent;
     transition: all .2s;
+
+    @include respond(tab-por){
+        font-size: 3rem;
+    }
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
 
     &:hover{
         transform: skewY(2deg) skewX(15deg) scale(1.1);

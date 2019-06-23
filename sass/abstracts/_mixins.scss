@@ -5,3 +5,49 @@
         clear: both;
     }
 }
+
+@mixin posCen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+// Media Queiries Manager
+
+/*
+0-600:      Phone
+600-900:    Tablet-portrait
+900-1200:   Tablet-landscape
+[1200-1800] = Default
+1800+:      Big-dextop
+
+$breakpoint agrument:
+- phone
+- tab-por
+- tab-land
+- big-dextop
+*/
+
+@mixin respond($breakpoint){
+   @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em){
+            @content
+        };
+    }
+    @if $breakpoint == tab-por {
+        @media only screen and (max-width: 56.25em){
+            @content
+        };
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em){
+            @content
+        };
+    }
+    @if $breakpoint == big-dextop {
+        @media only screen and (min-width: 112.5em){
+            @content
+        };
+    }
+}
