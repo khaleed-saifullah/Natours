@@ -5,7 +5,7 @@
 
 
 ## Live
-Demo [https://github.com/khaleed-saifullah/Natours]( https://github.com/khaleed-saifullah/Natours)
+Demo [https://github.com/khaleed-saifullah/Natours]( https://khaleed-saifullah.github.io/Natours/)
 
 
 ## Built With
