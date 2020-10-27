@@ -1,7 +1,7 @@
 
-# Resturant
+# Natours
 
-### This is a simple HTML template
+### This is a sample Traveling Agency HTML template
 
 
 ## Live
